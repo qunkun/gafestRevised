@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
-  background: #FFAA00;
+  background: RGBA(255,170,0,0.01);
   font-size: 48px;
   line-height: 1;
   width: auto;
@@ -483,7 +483,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 14px 32px;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
@@ -742,10 +742,6 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio {
-  background-color: #27C4BF;
-}
-
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -961,7 +957,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/facts-bg.jpg") no-repeat;
+  /* background: url("../img/facts-bg.jpg") no-repeat; */
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -974,7 +970,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(8, 10, 11, 0.85);
+  /* background: rgba(8, 10, 11, 0.85); */
 }
 
 .testimonials .section-header {
