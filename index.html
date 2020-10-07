@@ -18,6 +18,7 @@
   <!-- Custom Font CSS File -->
   <link rel="stylesheet" href="assets/custom-font/atari-classic/stylesheet.css">
   <link rel="stylesheet" href="assets/custom-font/montserrat/stylesheet.css">
+  <link rel="stylesheet" href="assets/custom-font/montserrat-bold/stylesheet.css">
 
   <!-- CSS -->
   <style>
@@ -26,6 +27,10 @@
     .custom-font {
       font-family: 'atari_classic_intchunky', arial, sans-serif;
       letter-spacing: -2px;
+    }
+
+    .montserrat-bold {
+      font-family: 'montserratbold';
     }
 
     .montserrat {
@@ -98,14 +103,17 @@
     }
 
     /* galeri gafest */
+    .galeri {
+      background-color: #27C4BF;
+    }
     .galeri-item {
       border: solid #391A8E 3px;
-      border-radius: 10px;
+      border-radius: 15px;
       padding: 10px;
     }
 
     .galeri-curved {
-      border-radius: 5px;
+      border-radius: 10px;
     }
     
     /* juklak section */
@@ -113,22 +121,27 @@
       background-image: url(assets/img/background/bg-gafest/bg-gafest500.png);
     }
     
-    .juklak-h2 {
-      background-color: RGBA(121,30,149,80%);
-      border: 3px solid whitesmoke;
-      border-radius: 20px;
-    }
-    
     .juklak {
-      background-color: RGBA(188,143,202, 80%); 
-      padding-top: 20px; 
+      background-color: RGBA(39,196,191,0.8); 
+      padding-top: 30px; 
       padding-bottom: 70px; 
       border: 3px solid whitesmoke;
       border-radius: 20px;
     }
     
-    .juklak-curve {
-      border-radius: 5px;
+    .juklak-curved {
+      border-radius: 10px;
+    }
+
+    /* timeline section */
+    .timeline {
+     background-color: #391A8E; 
+    }
+
+    .timeline-item {
+      background-color: #1C0D47;
+      height: 500px;
+      border-radius: 15px;
     }
     
     /* section-faq */
@@ -247,30 +260,19 @@
           <div class="carousel-item active" style="background-image: url(assets/img/slide/1.jpg); background-position-y: -130px;">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Ganesha Festival <br><span>2020</span></h2>
-                <p>jargon gafest</p>
+                <h2 class="montserrat-bold">Ganesha Festival <br><span>2020</span></h2>
+                <p class="montserrat">jargon gafest</p>
                 <a href="#" target="_blank" class="btn-get-started scrollto ">Daftar</a>
               </div>
             </div>
           </div>
 
           <!-- Slide 2 -->
-          <!-- <div class="carousel-item" style="background-image: url(assets/img/slide/2.jpg); background-position-y: -850px;">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>Ganesha Festival <span>2020</span></h2>
-                <p>jargon gafest</p>
-                <a href="http://bit.ly/daftargafest2019" target="_blank" class="btn-get-started scrollto ">Daftar</a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Slide 3 -->
           <div class="carousel-item" style="background-image: url(assets/img/slide/3.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Ganesha Festival <br><span>2020</span></h2>
-                <p>jargon gafest</p>
+                <h2 class="montserrat-bold">Ganesha Festival <br><span>2020</span></h2>
+                <p class="montserrat">jargon gafest</p>
                 <a href="http://bit.ly/daftargafest2019" target="_blank" class="btn-get-started scrollto">Daftar</a>
               </div>
             </div>
@@ -345,8 +347,8 @@
 
         <div class="row content">
           <header style="padding-bottom: 40px; padding-top: 20px; margin-left: 12%; margin-right: 12%; word-spacing: 13px; text-align: center;">
-            <div><h2 style="font-size: 40px;">apa itu ganesha festival?</h2></div>
-            <div class="col-lg-12 col-md-12 col-sm-12 about-section-content">
+            <div><h2 style="font-size: 40px;" class="montserrat-bold">apa itu ganesha festival?</h2></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 about-section-content montserrat">
               <p>Ganesha Festival adalah sebuah acara yang terdapat lomba olimpiade maupun lomba lainnya yang diselenggarakan tahunan oleh OSIS SMA NEGERI 3 SEMARANG.</p>
               <p>Lomba ini hanya dikhususkan untuk siswa pada jenjang SMP/MTs atau sederajat. Pada festival tahun ini, bidang yang dilombakan ada 7 bidang, yaitu Olimpiade Matematika, Olimpiade Biologi, Olimpiade Fisika, Speech, Agama Katolik, Agama Islam, dan Agama Kristen</p>
             </div>
@@ -458,7 +460,7 @@
 
     <!-- galeri gafest -->
     <div style="height: 20px; background-color: #FFAA00;"></div>
-    <section id="portfolio" class="portfolio galeri-gafest">
+    <section id="portfolio" class="portfolio galeri">
 
       <div class="container">
         <br>
@@ -560,22 +562,18 @@
     
     <!-- Juklak Gafest -->
     <section id="portfolio" class="juklak-section font-black portfolio juklak-gafest">
+      
+      <div class="container"></div>
 
-      <div class="juklak-h2 container section-title">
-        <h2 class="custom-font" style="color: whitesmoke; font-size: 30px;">Juklak<br>Perlombaan</h2>
-      </div>
-      <div style="height: 10px;"></div>
-
-      <div class="juklak container">
-
-        <div class="section-title custom-font">
-          <p style="font-size: 18px; text-transform: uppercase; margin-left: 2%; margin-right: 2%;">Cari Tahu Apa Saja Ketentuan Tentang Perlombaan</p><br>
+        <div class="container section-title">
+          <h2 class="montserrat-bold" style="color: whitesmoke; font-size: 30px;">Juklak Perlombaan<br>Ganesha Festival 2020</h2>
         </div>
-        <div class="row portfolio-container">
+        
+        <div class="row portfolio-container juklak">
 <!-- gambar 1 -->
           <div class="col-lg-4 col-md-12 col-sm-12 col-12 portfolio-item filter-app">
-            <div class="portfolio-wrap juklak-curve">
-              <img src="assets/img/juklak-perlombaan/mat-01.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap galeri-item">
+              <img src="assets/img/juklak-perlombaan/mat-01.png" class="img-fluid juklak-curved" alt="">
               <div class="portfolio-info">
                 <h4>MATEMATIKA</h4>
                 <p>JUKLAK MATEMATIKA</p>
@@ -588,8 +586,8 @@
           </div>
 <!-- gambar 2 -->
           <div class="col-lg-4 col-md-12 col-sm-12 col-12 portfolio-item filter-web">
-            <div class="portfolio-wrap juklak-curve">
-              <img src="assets/img/juklak-perlombaan/ipa-01.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap galeri-item">
+              <img src="assets/img/juklak-perlombaan/ipa-01.png" class="img-fluid juklak-curved" alt="">
               <div class="portfolio-info">
                 <h4>IPA</h4>
                 <p>JUKLAK IPA</p>
@@ -602,8 +600,8 @@
           </div>
 <!-- gambar 3 -->
           <div class="col-lg-4 col-md-12 col-sm-12 col-12 portfolio-item filter-app">
-            <div class="portfolio-wrap juklak-curve">
-              <img src="assets/img/juklak-perlombaan/ips-01.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap galeri-item">
+              <img src="assets/img/juklak-perlombaan/ips-01.png" class="img-fluid juklak-curved" alt="">
               <div class="portfolio-info">
                 <h4>IPS</h4>
                 <p>JUKLAK IPS</p>
@@ -616,8 +614,8 @@
           </div>
 <!-- gambar 4 -->
           <div class="col-lg-3 col-md-12 col-sm-12 col-12 portfolio-item filter-card">
-            <div class="portfolio-wrap juklak-curve">
-              <img src="assets/img/juklak-perlombaan/speech-01.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap galeri-item">
+              <img src="assets/img/juklak-perlombaan/speech-01.png" class="img-fluid juklak-curved" alt="">
               <div class="portfolio-info">
                 <h4>SPEECH</h4>
                 <p>JUKLAK SPEECH</p>
@@ -630,8 +628,8 @@
           </div>
 <!-- gambar 5 -->
           <div class="col-lg-3 col-md-12 col-sm-12 col-12 portfolio-item filter-web">
-            <div class="portfolio-wrap juklak-curve">
-              <img src="assets/img/juklak-perlombaan/lpa-is-01.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap galeri-item">
+              <img src="assets/img/juklak-perlombaan/lpa-is-01.png" class="img-fluid juklak-curved" alt="">
               <div class="portfolio-info">
                 <h4>AGAMA ISLAM</h4>
                 <p>JUKLAK AGAMA ISLAM</p>
@@ -644,8 +642,8 @@
           </div>
 <!-- gambar 6 -->
           <div class="col-lg-3 col-md-12 col-sm-12 col-12 portfolio-item filter-app">
-            <div class="portfolio-wrap juklak-curve">
-              <img src="assets/img/juklak-perlombaan/lpa-kat-01.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap galeri-item">
+              <img src="assets/img/juklak-perlombaan/lpa-kat-01.png" class="img-fluid juklak-curved" alt="">
               <div class="portfolio-info">
                 <h4>AGAMA KATOLIK</h4>
                 <p>JUKLAK AGAMA KATOLIK</p>
@@ -658,8 +656,8 @@
           </div>
 <!-- gambar 7 -->
           <div class="col-lg-3 col-md-12 col-sm-12 col-12 portfolio-item filter-app">
-            <div class="portfolio-wrap juklak-curve">
-              <img src="assets/img/juklak-perlombaan/lpa-kris-01.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap galeri-item">
+              <img src="assets/img/juklak-perlombaan/lpa-kris-01.png" class="img-fluid juklak-curved" alt="">
               <div class="portfolio-info">
                 <h4>AGAMA KRISTEN</h4>
                 <p>JUKLAK AGAMA KRISTEN</p>
@@ -672,7 +670,7 @@
           </div>
 
         </div>
-
+        <hr style="height: 10px; border-radius: 6px; background-color: #FF00AA;">
       </div>
     </section>
     
@@ -680,34 +678,22 @@
 
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <div style="height: 20px; background-color: #FF00AA;"></div>
+    <section id="testimonials" class="testimonials timeline">
       <div class="container" id="rundown">
 
         <div class="owl-carousel testimonials-carousel">
 
           <div class="testimonial-item">
             <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
-
-            <br><br><br><br><br>
             <div class="section-title custom-font">
-              <!-- <span>Timeline</span> -->
-              <h2 class="custom-font font-white" style="color: #f3f5f5;">Timeline Gafest</h2>
+              <h2 class="montserrat-bold font-white" style="font-size: 35px;">Timeline Gafest</h2>
             </div>
-            <br><br><br><br><br>
+            <div class="timeline-item">
+              <img src="" alt="">
+            </div>
 
           </div>
-
-          <!--
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div> -->
 
         </div>
 
@@ -716,6 +702,7 @@
     <!-- End Testimonials Section -->
 
     <!-- ======= Map Section ======= -->
+    <div style="height: 20px; background-color: #27C4BF;"></div>
     <section id="map" class="map">
       <div class="container custom-font">
         <div class="section-title">
