@@ -453,11 +453,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
-  background: none;
+  background: #FFAA00;
   font-size: 48px;
   line-height: 1;
   width: auto;
   height: auto;
+  border-radius: 15px;
 }
 
 #hero .carousel-indicators li {
@@ -472,7 +473,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background-color: #11A095;
+  background-color: #27C4BF;
 }
 
 #hero .btn-get-started {
@@ -487,7 +488,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   margin: 10px;
   color: #fff;
-  background: #11A095;
+  background: #27C4BF;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
@@ -741,6 +742,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  background-color: #27C4BF;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
