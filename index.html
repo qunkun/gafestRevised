@@ -72,11 +72,21 @@
 
 /* main */
     /* logo */
-    .logo img{
-      height: 250px;
+    .ganesha-logo {
+      background: url(assets/img/background/bg-gafest/bg-ungu-2.png);
+      position: relative;
+    }
+
+    .ganesha-logo img{
+      height: 300px;
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    /* about section */
+    .about {
+      background-image: url(assets/img/background/bg-gafest/bg-ungu.png);
     }
 
     /* featured-service */
@@ -89,7 +99,6 @@
       height: 120px;
       text-align: center;
       padding-top: 10px;
-      padding-left: 10px;
       border-radius: 15px;
     }
 
@@ -143,12 +152,26 @@
       height: 500px;
       border-radius: 15px;
     }
-    
+
+    /* map section */
+    .map {
+      background-color: #FFAA00;
+      color: #391A8E;
+    }
+
+    .map .smaga iframe{
+      border-radius: 15px;
+    }
+
     /* section-faq */
+    .section-faq {
+      background-color: #000000;
+    }
+
     .section-faq .btn-faq{
       padding: 15px;
       border-radius: 5px;
-      background-color: #11A095;
+      background-color: #27C4BF;
       color: #fff;
       transition-duration: 0.8s;
     }
@@ -157,6 +180,17 @@
       background-color: #1c796c;
       color: #fff;
     }
+
+    /* contact section */
+    .contact-content {
+      background-color: #27C4BF;
+      color: #FFFFFF;
+      height: 170px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
   </style>
 
   <!-- Google Fonts -->
@@ -204,7 +238,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center">
-
+      
       <div class="logo mr-auto">
         <h1 class="text-light custom-font"><a href="index.html">GANESHA<br><span> FESTIVAL</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -301,7 +335,7 @@
       <div class="container">
         <div class="row" style="text-transform: capitalize;">
 
-          <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="col-lg-3 col-md-3">
             <div class="featured-service-content">
               <h4 class="title purple custom-font">Love</h4>
               <p class="description">Love each other</p>
@@ -310,7 +344,7 @@
 
           <div class="col-lg-1 col-md-1 col-sm-1 col-1" style="height: 10px;"></div>
 
-          <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="col-lg-4 col-md-3">
             <div class="featured-service-content">
               <h4 class="title purple custom-font">disciplines</h4>
               <p class="description">mari belajar manajemen waktu</p>
@@ -319,7 +353,7 @@
 
           <div class="col-lg-1 col-md-1 col-sm-1 col-1" style="height: 10px;"></div>
 
-          <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="col-lg-3 col-md-3">
             <div class="featured-service-content">
               <h4 class="title purple custom-font">education</h4>
               <p class="description">let's study together</p>
@@ -332,22 +366,24 @@
     <div style="height: 20px; background-color: #27C4BF;"></div>
     
     <!-- ======= Logo ======= -->
+    <section id="ganesha-logo" class="ganesha-logo">
     <div class="container">
-      <div class="logo">
-        <br><br>
-        <img src="assets/img/ganesha-logo-1.png" alt="logo-gafest">
-        <br><br>
+        <div class="">
+          <br><br>
+          <img src="assets/img/ganesha-logo-1.png" alt="logo-gafest">
+          <br><br>
+        </div>
       </div>
-    </div>
-    <div style="height: 20px; background-color: #FF00AA;"></div>
-    
+    </section>
+
     <!-- ======= About Section ======= -->
+    <div style="height: 20px; background-color: #FF00AA;"></div>
     <section id="about" class="about">
       <div class="container">
 
         <div class="row content">
           <header style="padding-bottom: 40px; padding-top: 20px; margin-left: 12%; margin-right: 12%; word-spacing: 13px; text-align: center;">
-            <div><h2 style="font-size: 40px;" class="montserrat-bold">apa itu ganesha festival?</h2></div>
+            <div><h2 style="font-size: 40px;" class="montserrat-bold font-white">apa itu ganesha festival?</h2></div>
             <div class="col-lg-12 col-md-12 col-sm-12 about-section-content montserrat">
               <p>Ganesha Festival adalah sebuah acara yang terdapat lomba olimpiade maupun lomba lainnya yang diselenggarakan tahunan oleh OSIS SMA NEGERI 3 SEMARANG.</p>
               <p>Lomba ini hanya dikhususkan untuk siswa pada jenjang SMP/MTs atau sederajat. Pada festival tahun ini, bidang yang dilombakan ada 7 bidang, yaitu Olimpiade Matematika, Olimpiade Biologi, Olimpiade Fisika, Speech, Agama Katolik, Agama Islam, dan Agama Kristen</p>
@@ -707,13 +743,13 @@
     <section id="map" class="map">
       <div class="container custom-font">
         <div class="section-title">
-          <span class="custom-font">Peta</span>
-          <h2 class="custom-font">Peta</h2>
+          <!-- <span class="custom-font">Peta</span> -->
+          <h2 class="custom-font" style="font-size: 40px; color: #391A8E;">Peta</h2>
           <p style="text-transform: uppercase">Temukan Jalan Terdekat Menuju SMAN 3 Semarang</p>
         </div>
       </div>
 
-      <div class="map">
+      <div class="smaga">
         <div class="" style="padding-left: 5%; padding-right: 5%;" >
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.241273517355!2d110.41022831432815!3d-6.980831094956938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4e7489cd33%3A0xbfc6010c3d70d62a!2sSMA%20Negeri%203%20Semarang!5e0!3m2!1sid!2sid!4v1600834987531!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:1;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
@@ -721,25 +757,18 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="testimonials" class=" section-faq testimonials">
+    <section id="testimonials" class="section-faq testimonials">
       <div class="container">
 
         <div class="owl-carousel testimonials-carousel">
-
           <div class="testimonial-item">
-            <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
-
-            <br><br><br><br><br>
             <div class="section-title custom-font section-faq">
               <!-- <span>FAQ</span> -->
               <h2 class="custom-font" style="color: #f3f5f5;">FAQ</h2>
               <p>temukan masalah apa saja yang sering ditanyakan pada lomba sebelumnya di Frequently Asked Questions</p><br>
               <a href="#" target="_blank" class="btn-faq">Download FAQ</a>
             </div>
-            <br><br><br><br><br>
-
           </div>
-
         </div>
 
       </div>
@@ -748,29 +777,38 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <div class="section-title custom-font">
-        <span>Contact</span>
-        <h2 class="custom-font">Contact Us</h2>
-        <hr style="background-color: #11A095;" class="horizontal-line-short"><br>
-        <!-- <p style="font-size: 20px;">Cari Tahu Apa Saja Ketentuan Tentang Perlombaan</p><br> -->
+      <div class="section-title custom-font" style="padding-left: 10px; padding-right: 10px;">
+        <h2 class="custom-font" style="font-size: 30px;">Contact Us</h2>
+        <!-- <hr style="background-color: #11A095;" class="horizontal-line-short"><br> -->
+        <p style="font-size: 20px;">HUBUNGI KAMI MELALUI</p><br>
       </div>
 
         <div class="container">
           <div class="row" style="text-transform: capitalize; text-align: center;">
-  
-            <div class="col-lg-4 col-md-4 col-sm-4">
-              <h4 class="title cyan">Address</h4>
-              <p class="description">Jl. Pemuda No. 149, Sekayu, Semarang Tengah, Kota Semarang, Jawa Tengah 50132</p>
+            
+            <div class="col-lg-3 col-md-3">
+              <div class="contact-content">
+                <h4 class="title custom-font" style="color: #391A8E">Address</h4>
+                <p class="description">Jl. Pemuda No. 149, Sekayu, Semarang Tengah, Kota Semarang, Jawa Tengah 50132</p>
+              </div>
             </div>
+
+            <div class="col-sm-1 col-1" style="height: 10px;"></div>
   
-            <div class="col-lg-4 col-md-4 col-sm-4" style="border-right: solid; border-left: solid; border-color: #11A095; border-width: 4px; border-radius: 2px;">
-              <h4 class="title cyan">Phone Number</h4>
-              <p class="description" style="text-transform: lowercase;">xxxx-xxxx-xxxx</p>
+            <div class="col-lg-4 col-md-4">
+              <div class="contact-content">
+                <h4 class="title custom-font" style="color: #391A8E;">Phone Number</h4>
+                <p class="description" style="text-transform: lowercase;">xxxx-xxxx-xxxx</p>
+              </div>
             </div>
+
+            <div class="col-sm-1 col-1" style="height: 10px;"></div>
   
-            <div class="col-lg-4 col-md-4 col-sm-4">
-              <h4 class="title cyan">Email</h4>
-              <p class="description" style="text-transform: lowercase;">xxxxxxxxxxxxx@gmail.com</p>
+            <div class="col-lg-3 col-md-3">
+              <div class="contact-content">
+                <h4 class="title custom-font" style="color: #391A8E;">Email</h4>
+                <p class="description" style="text-transform: lowercase;">xxxxxxxxxxxxx@gmail.com</p>
+              </div>
             </div>
   
           </div>
